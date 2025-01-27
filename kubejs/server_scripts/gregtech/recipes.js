@@ -31,6 +31,12 @@ const registerGTCEURecipes = (event) => {
 
     //#endregion
 
+    event.recipes.gtceu.mixer('woods_alloy')
+        .itemInputs('15x gtceu:bismuth_dust', '8x gtceu:lead_dust', '4x gtceu:tin_dust', '3x gtceu:cadmium_dust')
+        .itemOutputs('30x gtceu:woods_metal_dust')
+        .duration(200)
+        .EUt(30)
+
     //#region Выход: Кварцевый песок
 
     event.shaped('gtceu:quartz_sand_dust', [
